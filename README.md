@@ -5,4 +5,5 @@ Yii2 SMS extension (基于yii2的短信扩展)
 支持接口：
 * [短信宝](http://api.smsbao.com/)
 * [云通讯](http://www.yuntongxun.com/)
+* [第一信息](http://www.eee1.cn/)
 
