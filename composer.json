@@ -1,0 +1,23 @@
+{
+    "name": "lonelythinker/yii2-smser",
+    "description": "Yii2 SMS extension",
+    "keywords": ["lonelythinker", "yii2", "extension", "sms", "smser", "plugin"],
+    "homepage": "https://github.com/lonelythinker/yii2-smser",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "涂显锋",
+            "email": "710366112@qq.com",
+            "homepage": "http://www.lonelythinker.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "lonelythinker\\smser\\": ""
+        }
+    }
+}
