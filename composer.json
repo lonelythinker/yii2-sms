@@ -14,11 +14,11 @@
     ],
     "minimum-stability" : "dev",
     "require": {
-        "yiisoft/yii2": "*"
+        "guzzlehttp/guzzle": "*"
     },
     "autoload": {
         "psr-4": {
-            "lonelythinker\\yii2-smser\\": ""
+            "lonelythinker\\smser\\": ""
         }
     }
 }
