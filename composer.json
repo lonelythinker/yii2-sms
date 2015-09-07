@@ -4,6 +4,7 @@
     "keywords": ["lonelythinker", "yii2", "extension", "sms", "smser", "plugin"],
     "homepage": "https://github.com/lonelythinker/yii2-smser",
     "type": "yii2-extension",
+    "license": "BSD 3-Clause",
     "authors": [
         {
             "name": "涂显锋",
@@ -14,6 +15,7 @@
     ],
     "minimum-stability" : "dev",
     "require": {
+        "yiisoft/yii2": "*",
         "guzzlehttp/guzzle": "*"
     },
     "autoload": {
