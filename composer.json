@@ -1,26 +1,28 @@
 {
-    "name": "lonelythinker/yii2-smser",
+    "name": "lonelythinker/yii2-sms",
     "description": "Yii2 SMS extension",
-    "keywords": ["lonelythinker", "yii2", "extension", "sms", "smser", "plugin"],
-    "homepage": "https://github.com/lonelythinker/yii2-smser",
+    "keywords": ["lonelythinker", "yii2", "extension", "sms", "plugin"],
+    "homepage": "https://github.com/lonelythinker/yii2-sms",
     "type": "yii2-extension",
     "license": "BSD 3-Clause",
+    "version": "0.0.1",
     "authors": [
         {
-            "name": "涂显锋",
+            "name": "lonelythinker",
             "email": "710366112@qq.com",
             "homepage": "http://www.lonelythinker.com/",
             "role": "Developer"
         }
     ],
-    "minimum-stability" : "dev",
     "require": {
-        "yiisoft/yii2": "*",
-        "guzzlehttp/guzzle": "*"
+        "yiisoft/yii2": "*"
+    },
+    "config": {
+        "process-timeout": 1800
     },
     "autoload": {
         "psr-4": {
-            "lonelythinker\\smser\\": ""
+            "lonelythinker\\yii2\\sms\\": ""
         }
     }
 }
