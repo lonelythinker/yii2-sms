@@ -24,5 +24,11 @@
         "psr-4": {
             "lonelythinker\\yii2\\sms\\": ""
         }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
     }
 }
