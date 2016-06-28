@@ -48,6 +48,13 @@ abstract class Sms extends \yii\base\Component
     protected $message;
     
     /**
+     * 扩展信息
+     *
+     * @var array
+     */
+    protected $extendArr;
+    
+    /**
      * 是否使用文件形式保存发送内容
      * 
      * @var boolean
@@ -153,5 +160,15 @@ abstract class Sms extends \yii\base\Component
     public function getMessage()
     {
         return $this->message;
+    }
+    
+    /**
+     * 获取扩展数组
+     *
+     * @return array
+     */
+    public function getExtendArr()
+    {
+        return $this->extendArr;
     }
 }
