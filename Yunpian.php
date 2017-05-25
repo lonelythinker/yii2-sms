@@ -101,14 +101,18 @@ class Yunpian extends Sms
 	    	$result = $smsOperator->batch_send($data);
 	    	if($result && is_object($result)){
 	    		$this->state = isset($result->responseData['total_count']) && $result->responseData['total_count'] > 0 && isset($result->success) && $result->success ? 0 : '';
-	    		$this->message = $this->state === 0 ? '发送成功' : '发送失败';
+	    		$msgs = '';
 	    		if(isset($result->responseData['data'])){
 	    			$errorMobiles = [];
 	    			foreach ($result->responseData['data'] as $item){
 	    				if(isset($item['code']) && $item['code'] !== 0){
 	    					$this->extendArr['errorMobiles'][] = $item['mobile'];
 	    				}
+	    				if(isset($item['msg']) && !empty($item['msg'])){
+	    					$msgs .= $item['msg'].' ';
+	    				}
 	    			}
+	    			$this->message = $this->state === 0 ? '发送成功' : (empty($msgs) ? '发送失败' : $msgs);
 	    		}
 	    	}
     	}
