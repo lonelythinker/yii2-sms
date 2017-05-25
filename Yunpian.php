@@ -109,7 +109,7 @@ class Yunpian extends Sms
 	    					$this->extendArr['errorMobiles'][] = $item['mobile'];
 	    				}
 	    				if(isset($item['msg']) && !empty($item['msg'])){
-	    					$msgs .= $item['msg'].' ';
+	    					$msgs .= $item['msg'] . ' ';
 	    				}
 	    			}
 	    			$this->message = $this->state === 0 ? '发送成功' : (empty($msgs) ? '发送失败' : $msgs);
