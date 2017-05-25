@@ -112,7 +112,7 @@ class Yunpian extends Sms
 	    					$msgs .= $item['msg'] . ' ';
 	    				}
 	    			}
-	    			$this->message = $this->state === 0 ? '发送成功' : (empty($msgs) ? '发送失败' : $msgs);
+	    			$this->message = $this->state === 0 ? '发送成功' : (empty($msgs) ? '发送失败' : trim($msgs));
 	    		}
 	    	}
     	}
