@@ -6,7 +6,7 @@ use yii\base\InvalidConfigException;
 use yii\base\NotSupportedException;
 
 /**
- * 中国云信
+ * 中国云信短信验证码
  * 
  * @author lonelythinker <710366112@qq.com>
  * @property string $password write-only password
