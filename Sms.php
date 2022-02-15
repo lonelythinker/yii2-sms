@@ -71,7 +71,7 @@ abstract class Sms extends \yii\base\Component
     public function send($mobile, $content)
     {
         if ($this->useFileTransport && $this->_fileTransport($mobile, $content)) {
-            $this->message = '短信发送成功！';
+            $this->message = '短信发送成功!';
             return true;
         }
         
@@ -91,7 +91,7 @@ abstract class Sms extends \yii\base\Component
         if ($this->useFileTransport) {
             $content = print_r($data, true);
             if ($this->_fileTransport($mobile, $content)) {
-                $this->message = '短信发送成功！';
+                $this->message = '短信发送成功!';
                 return true;
             }
         }
@@ -113,16 +113,16 @@ abstract class Sms extends \yii\base\Component
         
         try {
             if (!FileHelper::createDirectory($dir)) {
-                throw new \Exception('无法创建目录：' . $dir);
+                throw new \Exception('无法创建目录:' . $dir);
             }
         
             $filename = $dir . DIRECTORY_SEPARATOR . time() . mt_rand(1000, 9999) . '.msg';
             if (!touch($filename)) {
-                throw new \Exception('无法创建文件：' . $filename);
+                throw new \Exception('无法创建文件:' . $filename);
             }
         
             if (!file_put_contents($filename, "TO - $mobile" . PHP_EOL . "CONTENT - $content")) {
-                throw new \Exception('短信发送失败！');
+                throw new \Exception('短信发送失败!');
             }
             
             return true;
