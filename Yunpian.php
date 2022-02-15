@@ -3,7 +3,7 @@
 namespace lonelythinker\yii2\sms;
 
 /**
- * 云片网
+ * 云片网短信验证码
  */
 class Yunpian extends Sms
 {
