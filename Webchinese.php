@@ -5,7 +5,7 @@ namespace lonelythinker\yii2\sms;
 use yii\base\NotSupportedException;
 
 /**
- * 中国网建
+ * 中国网建短信验证码
  * 
  * @author lonelythinker <710366112@qq.com>
  * @property string $password write-only password
