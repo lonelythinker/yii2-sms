@@ -103,6 +103,6 @@ Yii::$app->->sendByTemplate('15000000000', ['123456'], 1);
 
 ## License
 
-**yii2-sms** is released under the BSD 3-Clause License. See the bundled `LICENSE` for details.
+**yii2-sms** is released under the Apache-2.0 License. See the bundled `LICENSE` for details.
 
 
